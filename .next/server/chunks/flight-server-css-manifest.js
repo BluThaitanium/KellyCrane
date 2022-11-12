@@ -1,0 +1,1 @@
+self.__RSC_CSS_MANIFEST={"__entry_css__":{"/Users/thaip/Desktop/TurboPack/archii_crane_turbopack/app/page":["/Users/thaip/Desktop/TurboPack/archii_crane_turbopack/app/globals.css"]},"/Users/thaip/Desktop/TurboPack/archii_crane_turbopack/app/layout.tsx":["/Users/thaip/Desktop/TurboPack/archii_crane_turbopack/app/globals.css"]}
