@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@react-spring/konva
+@react-spring/native
+@react-spring/three
+@react-spring/web
+@react-spring/zdog
+
 html,
 body {
   scroll-behavior: smooth;
@@ -13,4 +19,8 @@ body {
 
 .custom-img_crane_light_blue {
   background-image: url('../public/mobile/crane_light_blue.jpg');
+}
+
+.custom-inner_bottom_shadow {
+  box-shadow: 30px -60px 60px -40px #5A5A5A;
 }

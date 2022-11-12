@@ -1,4 +1,5 @@
 // These styles apply to every route in the application
+import Navbar from '../components/Navbar';
 import './globals.css';
 
 export default function RootLayout({ children }: {
@@ -6,7 +7,10 @@ export default function RootLayout({ children }: {
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar/>
+        {children}
+      </body>
     </html>
   );
 }
