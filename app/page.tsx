@@ -34,7 +34,8 @@ export default function Home() {
 
             <Skill 
               skillName='CAD Drafting'
-              color='#cae2ef'
+              color='#edf6fe'
+              rotateDeg={1}
               flexElement={
                 <div className='flex'>
                   <TechIcon tech_skill='Formit Pro' icon_pic='/skills/formit_logo.png' />
@@ -48,7 +49,8 @@ export default function Home() {
 
             <Skill
               skillName='3D Rendering'
-              color='#ddcaef'
+              color='#f8edff'
+              rotateDeg={-3}
               flexElement={
                 <div className='flex'>
                   <TechIcon tech_skill='D5 Render' icon_pic='/skills/d5_logo.png' />
@@ -60,7 +62,8 @@ export default function Home() {
 
             <Skill
               skillName='Adobe Creative Cloud'
-              color='#caefe1'
+              color='#edfef7'
+              rotateDeg={-1}
               flexElement={
                 <div className='flex'>
                   <TechIcon tech_skill='Photoshop' icon_pic='/skills/photoshop_logo.svg' />
