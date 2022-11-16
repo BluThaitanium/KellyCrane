@@ -32,11 +32,11 @@ export default function Home() {
         </div>
 
         <div className='sticky top-[4rem]'>
-          <a id='SkillStack' href='#SkillsLink' className='inline-block pl-10 pr-8 -mx-5 text-6xl bg-white rounded-tr-full -mb-1 transform transition hover:scale-90'>Skills Stack</a>
-          <div className='text-center bg-white pt-8 pb-16 h-[100%]'>
+          <a id='SkillStack' href='#SkillsLink' className='inline-block pl-10 pr-8 -mx-5 text-6xl bg-[#e7c9a9] rounded-tr-full -mb-1 transform transition hover:scale-90'>Skills Stack</a>
+          <div className='text-center bg-[#e7c9a9] pt-8 pb-16 h-[100%]'>
 
             <div className='inline-block bg-blue-300 p-3 m-5 rounded-b-[4rem] rounded-tr-[4rem]'>
-              <h2 className='inline-block text-left text-4xl mb-4 p-3 bg-white rounded-3xl'>CAD Drafting</h2>
+              <h2 className='inline-block text-left text-4xl mb-4 p-3 bg-[#e7c9a9] rounded-3xl'>CAD Drafting</h2>
               <div className='flex'>
                 <TechIcon tech_skill='Formit Pro' icon_pic='/skills/formit_logo.png' />
                 <TechIcon tech_skill='AutoCAD' icon_pic='/skills/autocad_logo.png' />
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
 
             <div className='inline-block bg-purple-300 p-3 m-5 rounded-b-[4rem] rounded-tr-[4rem]'>
-              <h2 className='inline-block text-left text-4xl mb-4 p-3 bg-white rounded-3xl'>3D Rendering</h2>
+              <h2 className='inline-block text-left text-4xl mb-4 p-3 bg-[#e7c9a9] rounded-3xl'>3D Rendering</h2>
               <div className='flex'>
                 <TechIcon tech_skill='D5 Render' icon_pic='/skills/d5_logo.png' />
                 <TechIcon tech_skill='Lumion' icon_pic='/skills/lumion_logo.svg' />
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
 
             <div className='inline-block bg-red-300 p-3 m-5 rounded-b-[4rem] rounded-tr-[4rem]'>
-              <h2 className='inline-block text-left text-4xl mb-4 p-3 bg-white rounded-3xl'>Adobe Creative Cloud</h2>
+              <h2 className='inline-block text-left text-4xl mb-4 p-3 bg-[#e7c9a9] rounded-3xl'>Adobe Creative Cloud</h2>
               <div className='flex'>
                 <TechIcon tech_skill='Photoshop' icon_pic='/skills/photoshop_logo.svg' />
                 <TechIcon tech_skill='Illustrator' icon_pic='/skills/illustrator_logo.svg' />
@@ -69,31 +69,31 @@ export default function Home() {
 
 
         <div className='sticky top-[8rem] mt-[-4rem]'>
-          <a href='#ExperienceLink' className='inline-block pl-10 pr-8 -mx-5 text-6xl bg-white rounded-tr-full -mb-1 transform transition hover:scale-90'>Experience</a>
-          <div className='bg-white pt-8 pb-16 h-[95%] custom-inner_bottom_shadow'>
+          <a href='#ExperienceLink' className='inline-block pl-10 pr-8 -mx-5 text-6xl bg-[#e7c9a9] rounded-tr-full -mb-1 transform transition hover:scale-90'>Experience</a>
+          <div className='bg-[#e7c9a9] pt-8 pb-16 h-[95%] custom-inner_bottom_shadow'>
             <Experience job_icon='/experience/provectus_logo.png' accessability='Provectus Inc Logo' />
           </div>
         </div>
 
         <div className='sticky top-[12rem] mt-[-4rem]'>
-          <a href='#CertificationsLink' className='inline-block pl-10 pr-8 -mx-5 text-6xl bg-white rounded-tr-full -mb-1 transform transition hover:scale-90'>Certifications</a>
-          <div className='bg-white pt-8 pb-16 h-[90%] custom-inner_bottom_shadow'>
+          <a href='#CertificationsLink' className='inline-block pl-10 pr-8 -mx-5 text-6xl bg-[#e7c9a9] rounded-tr-full -mb-1 transform transition hover:scale-90'>Certifications</a>
+          <div className='bg-[#e7c9a9] pt-8 pb-16 h-[90%] custom-inner_bottom_shadow'>
             <Certification logo='/certification/osha.svg' message='OSHA 10 Certification | 2019' />
 
           </div>
         </div>
 
         <div className='sticky top-[16rem] mt-[-4rem]'>
-          <a href='#EducationLink' className='inline-block pl-10 pr-8 -mx-5 text-6xl bg-white rounded-tr-full -mb-1 transform transition hover:scale-90'>Education</a>
-          <div className='bg-white pt-8 pb-16 h-[85%] custom-inner_bottom_shadow'>
+          <a href='#EducationLink' className='inline-block pl-10 pr-8 -mx-5 text-6xl bg-[#e7c9a9] rounded-tr-full -mb-1 transform transition hover:scale-90'>Education</a>
+          <div className='bg-[#e7c9a9] pt-8 pb-16 h-[85%] custom-inner_bottom_shadow'>
             <Education logo='/education/morrisville.svg' title='SUNY Morrisville' message='example' />
 
           </div>
         </div>
 
         <div className='sticky top-[20rem] mt-[-4rem]'>
-          <a href='#ExtracurricularLink' className='inline-block pl-10 pr-8 -mx-5 text-6xl bg-white rounded-tr-full -mb-1 transform transition hover:scale-90'>Leadership | Extracurriculars</a>
-          <div className='bg-white pt-8 pb-16 h-[80%] custom-inner_bottom_shadow'>
+          <a href='#ExtracurricularLink' className='inline-block pl-10 pr-8 -mx-5 text-6xl bg-[#e7c9a9] rounded-tr-full -mb-1 transform transition hover:scale-90'>Leadership | Extracurriculars</a>
+          <div className='bg-[#e7c9a9] pt-8 pb-16 h-[80%] custom-inner_bottom_shadow'>
             <Extracurricular curricular='Morrisville Tutoring' position='Peer Tutor' message='asdf'/>
           </div>
         </div>
