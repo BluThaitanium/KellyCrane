@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Hero from './Landing'
 import styles from './page.module.css'
 import { BsChevronDoubleDown } from 'react-icons/bs'
 

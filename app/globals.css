@@ -99,11 +99,8 @@ body {
 
 .custom-manilla-header {
   display: inline-block;
-  padding-right: 2rem;
-  padding-left: 2.5rem;
-  margin-left: -1.25rem;
-  margin-right: -1.25rem;
-  margin-bottom: -0.25rem;
+  padding: 0 2rem 0 2.5rem;
+  margin: 0 0 -0.25rem -1.25rem;
   transition-property: background-color, border-color, color, fill, stroke,
     opacity, box-shadow, transform;
   font-size: 7vmin;
@@ -118,6 +115,55 @@ body {
 
 .custom-manilla-folder {
   background-image: linear-gradient(#ffecd0, #e2caad);
-  padding-bottom: 4rem;
-  padding-top: 2rem;
+  padding: 2rem 0 4rem 0;
+}
+
+.custom-folder-header {
+  width: 50vmin;
+  float: right;
+  padding: 1vmin 3vmin 1vmin 3vmin;
+  margin: -7vmin 0 0 0;
+  border-top-left-radius: 9999px;
+}
+
+.custom-folder-header:hover {
+  transform: scale(0.9);
+  margin-right: -3vmin;
+}
+
+.custom-folder-folder {
+  height: 100%;
+  padding-top: 3vmin;
+}
+
+.custom-folder-paper {
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 0 auto;
+  padding: 24px;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  z-index: 5;
+}
+.custom-folder-paper:before, .custom-folder-paper:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.custom-folder-paper:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5vmax);
+}
+.custom-folder-paper:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
 }

@@ -8,6 +8,7 @@ import Education from '../components/homepage/Education'
 import Extracurricular from '../components/homepage/Extracurricular'
 import Skill from '../components/homepage/Skill'
 
+// TODO: OnClick smooth scroll to folder header
 export default function Home() {
   return (
     <div>
@@ -78,7 +79,19 @@ export default function Home() {
         <div className='sticky top-[calc(4rem+7vmin)] mt-[-4rem]'>
           <a href='#ExperienceLink' className='custom-manilla-header'>Experience</a>
           <div className='h-[95%] custom-inner_bottom_shadow custom-manilla-folder'>
-            <Experience job_icon='/images/experience/provectus_logo.png' accessability='Provectus Inc Logo' />
+            <Experience
+              jobIcon='/images/experience/provectus_logo.png'
+              accessability='Provectus Inc Logo'
+              folderColor='#554c79'
+              experienceElement={
+                <ul>
+                  <li>fgfsgfgg</li>
+                  <li>fdasasdf</li>
+                  <li>fdffdfdfdf</li>
+                  <li>mmmmmmmmmm</li>
+                </ul>
+              }
+            />
           </div>
         </div>
 
