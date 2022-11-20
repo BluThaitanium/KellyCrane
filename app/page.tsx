@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import { BsChevronDoubleDown } from 'react-icons/bs'
 import Landing from '../components/homepage/Landing'
 import TechIcon from '../components/homepage/TechIcon'
 import Experience from '../components/homepage/Experience'
@@ -10,27 +9,28 @@ import Extracurricular from '../components/homepage/Extracurricular'
 import Skill from '../components/homepage/Skill'
 
 export default function Home() {
-  // const skillsLink: string = window.document.getElementById('#SkillStack')?.getBoundingClientRect().top.toString()!
-
-  // window.document.getElementById('#SkillsLink')!.style.marginTop = skillsLink ?? 132
-
   return (
     <div>
       <Landing scroll_message='Scroll for My Resume' />
-      <div id='SkillsLink' className='p-2 absolute top-0 z-50 mt-[calc(100vh+34rem)]' />
-      <div id='ExperienceLink' className='p-2 absolute top-0 z-50 mt-[calc(200vh+34rem)]' />
-      <div id='CertificationsLink' className='p-2 absolute top-0 z-50 mt-[calc(300vh+34rem)]' />
-      <div id='EducationLink' className='p-2 absolute top-0 z-50 mt-[calc(400vh+34rem)]' />
-      <div id='ExtracurricularLink' className='p-2 absolute top-0 z-50 mt-[calc(500vh+34rem)]' />
+      <div id='SkillsLink' className='10sp-2 absolute top-0 z-50 mt-[calc(100vh+30rem)]' />
+      <div id='ExperienceLink' className='10sp-2 absolute top-0 z-50 mt-[calc(200vh+26rem+7vmin)]' />
+      <div id='CertificationsLink' className='10sp-2 absolute top-0 z-50 mt-[calc(294vh+22rem+14vmin)]' />
+      <div id='EducationLink' className='10sp-2 absolute top-0 z-50 mt-[calc(384vh+18rem+21vmin)]' />
+      <div id='ExtracurricularLink' className='10sp-2 absolute top-0 z-50 mt-[calc(468vh+14rem+28vmin)]' />
 
-      <div className='bg-[#f0e7e0] rounded-t-[10rem] custom-color_change'>
+      <div className='bg-[#f0e7e0] rounded-t-[20vmin] custom-color_change'>
         <div className='flex justify-center items-center'>
-          <img src={'/profile_pic.png'} alt="Kelly's Profile Picture" className='top-0 w-72 rounded-full border-white border-8 border-spacing-10 mt-40 mb-24' />
+          <Image
+            src={'/profile_pic.png'} alt="Kelly's Profile Picture"
+            width={500} height={500} placeholder="blur"
+            blurDataURL="|LHdEI5lNEE3-WI;=tIps:}9IpNL-nM{R,NxoyxC-UNbEhxGs:kB%1njIpenRkxtjZs9jEIq%1ShxZofR-jEkCo#NHnhxZn+ofoIRkoMs-n$WCkCV@R-xGocS2bIa#aeW;oJf+s:ahRkbFs:j[aznjWCWBoeflWCsmWVW;"
+            className='top-0 w-72 rounded-full border-white border-8 border-spacing-10 mt-24 mb-24'
+          />
         </div>
 
         <div className='sticky top-[4rem]'>
           <a id='SkillStack' href='#SkillsLink' className='custom-manilla-header'>Skills Stack</a>
-          <div className='text-center h-[100%] custom-manilla-folder'>
+          <div className='text-center h-full custom-manilla-folder'>
 
             <Skill 
               skillName='CAD Drafting'
@@ -46,7 +46,6 @@ export default function Home() {
                 </div>
               }
             />
-
             <Skill
               skillName='3D Rendering'
               color='#f8edff'
@@ -59,7 +58,6 @@ export default function Home() {
                 </div>
               }
             />
-
             <Skill
               skillName='Adobe Creative Cloud'
               color='#edfef7'
@@ -77,14 +75,14 @@ export default function Home() {
         </div>
 
 
-        <div className='sticky top-[8rem] mt-[-4rem]'>
+        <div className='sticky top-[calc(4rem+7vmin)] mt-[-4rem]'>
           <a href='#ExperienceLink' className='custom-manilla-header'>Experience</a>
           <div className='h-[95%] custom-inner_bottom_shadow custom-manilla-folder'>
             <Experience job_icon='/experience/provectus_logo.png' accessability='Provectus Inc Logo' />
           </div>
         </div>
 
-        <div className='sticky top-[12rem] mt-[-4rem]'>
+        <div className='sticky top-[calc(4rem+14vmin)] mt-[-4rem]'>
           <a href='#CertificationsLink' className='custom-manilla-header'>Certifications</a>
           <div className='h-[90%] custom-inner_bottom_shadow custom-manilla-folder'>
             <Certification logo='/certification/osha.svg' message='OSHA 10 Certification | 2019' />
@@ -92,7 +90,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='sticky top-[16rem] mt-[-4rem]'>
+        <div className='sticky top-[calc(4rem+21vmin)] mt-[-4rem]'>
           <a href='#EducationLink' className='custom-manilla-header'>Education</a>
           <div className='h-[85%] custom-inner_bottom_shadow custom-manilla-folder'>
             <Education logo='/education/morrisville.svg' title='SUNY Morrisville' message='example' />
@@ -100,14 +98,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='sticky top-[20rem] mt-[-4rem]'>
+        <div className='sticky top-[calc(4rem+28vmin)] mt-[-4rem]'>
           <a href='#ExtracurricularLink' className='custom-manilla-header'>Leadership | Extracurriculars</a>
           <div className='h-[80%] custom-inner_bottom_shadow custom-manilla-folder'>
             <Extracurricular curricular='Morrisville Tutoring' position='Peer Tutor' message='asdf' />
           </div>
         </div>
 
-        <div className='sticky top-[32rem] bg-black'>
+        <div className='sticky top-[calc(4rem+35vmin)] bg-black'>
           <div className='h-1/6'>
             <button>View Portfolio</button>
             <button>Contact Me</button>

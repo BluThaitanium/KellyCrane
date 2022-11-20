@@ -3,6 +3,8 @@ export default function Head() {
         <head>
             <title>Kelly Crane</title>
             <meta name="description" content="Architecture Portfolio Website" />
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <meta name="theme-color" content="#FFFFFF"/>
             <link rel="icon" href="/favicon.ico" />
             <link rel="mask-icon" type="image/png" href="/favicon.png"/>
             <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>

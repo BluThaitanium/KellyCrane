@@ -14,8 +14,8 @@ const Navbar = () => {
     }
 
     return (
-        <div className='fixed left-0 top-0 w-full z-10 ease-in duration-300 backdrop-blur-md'>
-            <div className='max-w-[1240px] m-auto flex justify-between items-center text-black'>
+        <div className='fixed left-0 top-0 w-screen z-10 ease-in duration-300 backdrop-blur-md'>
+            <div className='m-auto flex justify-between items-center text-black'>
                 <Link href="/">
                     <h1 className='flex font-bold text-2xl ml-4'>
                         CRANE
@@ -38,7 +38,7 @@ const Navbar = () => {
 
                 {/* ----- Mobile Functionality ----- */}
                 <div onClick={handleNav} className='block sm:hidden z-10 p-4'>
-                    {nav ? <AiOutlineClose size={40} color="white" /> : <AiOutlineMenu size={30}/>}
+                    {nav ? <AiOutlineClose size={40} color="white" /> : <AiOutlineMenu size={32}/>}
                 </div>
                 <div className={
                     nav ?

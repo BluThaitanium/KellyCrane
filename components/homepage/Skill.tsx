@@ -14,13 +14,14 @@ const Skill = ( { skillName, color, rotateDeg, flexElement }:
     <div
       style={{
         background: `url(${flashcard.src}), ${color}`,
+        backgroundSize: `auto 100%`,
         transform: `rotate(${rotateDeg}deg)`
       }}
-      className='inline-block p-3 m-5 rounded-b-[4rem] rounded-tr-[4rem] shadow-lg'
+      className='inline-block p-[1vmin] m-[2vmin] rounded-b-[6vmin] rounded-tr-[6vmin] shadow-lg'
     >
 
       <h2
-        className='inline-block text-left text-4xl mb-4 p-3 bg-white rounded-3xl border-black border-[1px]'>
+        className='inline-block text-left mb-4 p-[1vmin] bg-white rounded-2xl border-black border-[1px]'>
         {skillName}
       </h2>
 
