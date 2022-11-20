@@ -21,7 +21,7 @@ export default function Home() {
       <div className='bg-[#f0e7e0] rounded-t-[20vmin] custom-color_change'>
         <div className='flex justify-center items-center'>
           <Image
-            src={'/profile_pic.png'} alt="Kelly's Profile Picture"
+            src={'/images/profile_pic.png'} alt="Kelly's Profile Picture"
             width={500} height={500} placeholder="blur"
             blurDataURL="|LHdEI5lNEE3-WI;=tIps:}9IpNL-nM{R,NxoyxC-UNbEhxGs:kB%1njIpenRkxtjZs9jEIq%1ShxZofR-jEkCo#NHnhxZn+ofoIRkoMs-n$WCkCV@R-xGocS2bIa#aeW;oJf+s:ahRkbFs:j[aznjWCWBoeflWCsmWVW;"
             className='top-0 w-72 rounded-full border-white border-8 border-spacing-10 mt-24 mb-24'
@@ -38,11 +38,11 @@ export default function Home() {
               rotateDeg={1}
               flexElement={
                 <div className='flex'>
-                  <TechIcon tech_skill='Formit Pro' icon_pic='/skills/formit_logo.png' />
-                  <TechIcon tech_skill='AutoCAD' icon_pic='/skills/autocad_logo.png' />
-                  <TechIcon tech_skill='Revit' icon_pic='/skills/revit_logo.png' />
-                  <TechIcon tech_skill='ArchiCAD' icon_pic='/skills/archicad_logo.png' />
-                  <TechIcon tech_skill='SketchUp' icon_pic='/skills/sketchup_logo.svg' />
+                  <TechIcon tech_skill='Formit Pro' icon_pic='/images/skills/formit_logo.png' />
+                  <TechIcon tech_skill='AutoCAD' icon_pic='/images/skills/autocad_logo.png' />
+                  <TechIcon tech_skill='Revit' icon_pic='/images/skills/revit_logo.png' />
+                  <TechIcon tech_skill='ArchiCAD' icon_pic='/images/skills/archicad_logo.png' />
+                  <TechIcon tech_skill='SketchUp' icon_pic='/images/skills/sketchup_logo.svg' />
                 </div>
               }
             />
@@ -52,9 +52,9 @@ export default function Home() {
               rotateDeg={-3}
               flexElement={
                 <div className='flex'>
-                  <TechIcon tech_skill='D5 Render' icon_pic='/skills/d5_logo.png' />
-                  <TechIcon tech_skill='Lumion' icon_pic='/skills/lumion_logo.svg' />
-                  <TechIcon tech_skill='Enscape' icon_pic='/skills/enscape_logo.png' />
+                  <TechIcon tech_skill='D5 Render' icon_pic='/images/skills/d5_logo.png' />
+                  <TechIcon tech_skill='Lumion' icon_pic='/images/skills/lumion_logo.svg' />
+                  <TechIcon tech_skill='Enscape' icon_pic='/images/skills/enscape_logo.png' />
                 </div>
               }
             />
@@ -64,9 +64,9 @@ export default function Home() {
               rotateDeg={-1}
               flexElement={
                 <div className='flex'>
-                  <TechIcon tech_skill='Photoshop' icon_pic='/skills/photoshop_logo.svg' />
-                  <TechIcon tech_skill='Illustrator' icon_pic='/skills/illustrator_logo.svg' />
-                  <TechIcon tech_skill='InDesign' icon_pic='/skills/indesign_logo.svg' />
+                  <TechIcon tech_skill='Photoshop' icon_pic='/images/skills/photoshop_logo.svg' />
+                  <TechIcon tech_skill='Illustrator' icon_pic='/images/skills/illustrator_logo.svg' />
+                  <TechIcon tech_skill='InDesign' icon_pic='/images/skills/indesign_logo.svg' />
                 </div>
               }
             />
@@ -78,14 +78,14 @@ export default function Home() {
         <div className='sticky top-[calc(4rem+7vmin)] mt-[-4rem]'>
           <a href='#ExperienceLink' className='custom-manilla-header'>Experience</a>
           <div className='h-[95%] custom-inner_bottom_shadow custom-manilla-folder'>
-            <Experience job_icon='/experience/provectus_logo.png' accessability='Provectus Inc Logo' />
+            <Experience job_icon='/images/experience/provectus_logo.png' accessability='Provectus Inc Logo' />
           </div>
         </div>
 
         <div className='sticky top-[calc(4rem+14vmin)] mt-[-4rem]'>
           <a href='#CertificationsLink' className='custom-manilla-header'>Certifications</a>
           <div className='h-[90%] custom-inner_bottom_shadow custom-manilla-folder'>
-            <Certification logo='/certification/osha.svg' message='OSHA 10 Certification | 2019' />
+            <Certification logo='/images/certification/osha.svg' message='OSHA 10 Certification | 2019' />
 
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function Home() {
         <div className='sticky top-[calc(4rem+21vmin)] mt-[-4rem]'>
           <a href='#EducationLink' className='custom-manilla-header'>Education</a>
           <div className='h-[85%] custom-inner_bottom_shadow custom-manilla-folder'>
-            <Education logo='/education/morrisville.svg' title='SUNY Morrisville' message='example' />
+            <Education logo='/images/education/morrisville.svg' title='SUNY Morrisville' message='example' />
 
           </div>
         </div>

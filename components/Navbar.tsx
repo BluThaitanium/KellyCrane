@@ -3,8 +3,6 @@
 import Link from 'next/link';
 import React, {useState} from "react";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import { NavLink as RRDLink } from "react-router-dom"
-import styled from 'styled-components'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)

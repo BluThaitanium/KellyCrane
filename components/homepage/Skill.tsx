@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import TechIcon from './TechIcon'
-import flashcard from '../../public/skills/flashcard.png'
+import flashcard from '../../public/images/skills/flashcard.png'
 import { Architects_Daughter } from '@next/font/google'
 
 
