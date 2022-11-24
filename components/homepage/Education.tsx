@@ -1,21 +1,52 @@
 import React from 'react'
-import Image  from 'next/image'
+import Image from 'next/image'
+import { Pirata_One } from '@next/font/google'
 
-const Education = ({ logo, title, message }: { logo: string, title: string, message: string }) => {
-    return (
-        <div className='p-16'>
-            <div className='flex bg-green-100'>
-                <Image
-                    src={logo} alt={message} width={400} height={400}
-                    className='w-[20%]'
-                />
-                <div className='justify-center items-center text-center w-full'>
-                    <h2 className=''>{title}</h2>
-                    <p>{message}</p>
-                </div>
-            </div>
+const pirata = Pirata_One({ weight: '400', subsets: ['latin'] })
+
+// import localFont from '@next/font/local'
+
+// const pirata = localFont({
+//   src: '../../public/fonts/CloisterBlack.woff2',
+//   weight: '400',
+// //   subsets: ['latin'],
+// })
+
+const Education = ({
+  university,
+  logo,
+  degree,
+  degreeMonth,
+  degreeYear,
+  major,
+}: {
+  university: string
+  logo: string
+  degree: string
+  degreeMonth: string
+  degreeYear: string
+  major: string
+}) => {
+  return (
+    <div className="bg-white w-[90vmin] h-[54vmin] mx-auto py-[2vmin]">
+      <div className="text-center w-full">
+        <h2 className={`${pirata.className} text-[7vmin] leading-tight`}>{university}</h2>
+        <div className="flex justify-center items-center text-center">
+          <p className="text-[4vmin]">{degreeMonth}</p>
+          <Image
+            src={logo}
+            alt={degree}
+            width={400}
+            height={400}
+            className="w-[20%] mx-[5vmin]"
+          />
+          <p className="text-[4vmin]">{degreeYear}</p>
         </div>
-    )
+        <p className="text-[6vmin]">{degree}</p>
+        <p className="text-[5vmin]">{major}</p>
+      </div>
+    </div>
+  )
 }
 
 export default Education

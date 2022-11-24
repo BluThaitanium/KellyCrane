@@ -19,13 +19,13 @@ export default function Home() {
       <div id='EducationLink' className='10sp-2 absolute top-0 z-50 mt-[calc(384vh+18rem+21vmin)]' />
       <div id='ExtracurricularLink' className='10sp-2 absolute top-0 z-50 mt-[calc(468vh+14rem+28vmin)]' />
 
-      <div className='bg-[#f0e7e0] rounded-t-[20vmin] custom-color_change'>
+      <div className='bg-[#5d5388] rounded-t-[20vmin] custom-color_change'>
         <div className='flex justify-center items-center'>
           <Image
             src={'/images/profile_pic.png'} alt="Kelly's Profile Picture"
             width={500} height={500} placeholder="blur"
             blurDataURL="|LHdEI5lNEE3-WI;=tIps:}9IpNL-nM{R,NxoyxC-UNbEhxGs:kB%1njIpenRkxtjZs9jEIq%1ShxZofR-jEkCo#NHnhxZn+ofoIRkoMs-n$WCkCV@R-xGocS2bIa#aeW;oJf+s:ahRkbFs:j[aznjWCWBoeflWCsmWVW;"
-            className='top-0 w-72 rounded-full border-white border-8 border-spacing-10 mt-24 mb-24'
+            className='top-0 w-72 rounded-full border-white border-8 border-spacing-10 mt-24 mb-24 custom-light-shadow'
           />
         </div>
 
@@ -106,8 +106,14 @@ export default function Home() {
         <div className='sticky top-[calc(4rem+21vmin)] mt-[-4rem]'>
           <a href='#EducationLink' className='custom-manilla-header'>Education</a>
           <div className='h-[85%] custom-inner_bottom_shadow custom-manilla-folder'>
-            <Education logo='/images/education/morrisville.svg' title='SUNY Morrisville' message='example' />
-
+            <Education
+              logo='/images/education/morrisville.svg'
+              university='State University of New York at Morrisville'
+              degree='Associates'
+              degreeMonth='May'
+              degreeYear='2022'
+              major='Architectural Studies & Design'
+            />
           </div>
         </div>
 

@@ -138,7 +138,7 @@ body {
 
 .custom-folder-paper {
   background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 0 auto;
   padding: 24px;
   position: relative;
@@ -146,8 +146,9 @@ body {
   height: 90%;
   z-index: 5;
 }
-.custom-folder-paper:before, .custom-folder-paper:after {
-  content: "";
+.custom-folder-paper:before,
+.custom-folder-paper:after {
+  content: '';
   height: 98%;
   position: absolute;
   width: 100%;
@@ -155,15 +156,48 @@ body {
 }
 .custom-folder-paper:before {
   background: #fafafa;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   left: -5px;
   top: 4px;
   transform: rotate(-2.5vmax);
 }
 .custom-folder-paper:after {
   background: #f6f6f6;
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   right: -3px;
   top: 1px;
   transform: rotate(1.4deg);
+}
+
+.custom-light-shadow {
+  -moz-box-shadow: 0 0 10vw #000;
+  -webkit-box-shadow: 0 0 10vw #000;
+  box-shadow: 0px 0px 10vw #000;
+}
+
+.custom-rainbow-shadow:before {
+  content: '';
+  background: linear-gradient(0deg, #9884ea, #ffffff);
+  /* background: linear-gradient(45deg, #F0F8F0, #F0FFF0, #FFF0F0, #D8BFD0); */
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  filter: blur(10vw);
+
+  animation-name: border-glow;
+  animation-fill-mode: both;
+  animation-duration: 4s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes border-glow {
+  0,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }

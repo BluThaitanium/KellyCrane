@@ -30,6 +30,9 @@ const withPWA = require('next-pwa')({
 module.exports = withPWA({
   experimental: {
     appDir: true,
+    fontLoaders: [
+      { loader: '@next/font/google', options: { subsets: ['latin'] } },
+    ],
   },
   // headers,
 })

@@ -4,7 +4,7 @@ import { BsChevronDoubleDown } from 'react-icons/bs'
 const Landing = ({ scroll_message }: { scroll_message: string }) => {
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="flex justify-center items-center h-[calc(100vh-8rem)] w-[80%] border-[0.5rem] rounded-[80px]">
+      <div className="flex bg-white justify-center items-center h-[calc(100vh-8rem)] w-[80%] border-[0.5rem] rounded-[80px] custom-rainbow-shadow">
         <div className="leading-none w-full">
           <h1 className="text-[15vmin] items-center justify-center flex">
             Kelly <br/> Crane
