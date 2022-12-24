@@ -141,7 +141,7 @@ export default function Home() {
               folderColor="#554c79"
               experienceElement={
                 <ul>
-                  <li className=" text-[4vw]">
+                  <li className="text-[4vw]">
                     <h3>
                       <strong>CAD Drafter</strong> | Specializing in Electrical
                     </h3>
@@ -149,15 +149,15 @@ export default function Home() {
                   <p className="text-[3vw]">
                     Virginia | Maryland | District of Columbia
                   </p>
-                  <div className="">
-                    <div className="text-[3vw] mt-[2vh] min-w-1/2">
+                  <div className="flex flex-wrap">
+                    <div className="text-[3vmin] mt-[2vh] min-w-1/2">
                       <ul className="list-disc ml-[5vw]">
                         <li>Draft Electrical Work</li>
                         <li>Compliance Checks</li>
                         <li>Perform & Verify Calculations</li>
                       </ul>
                     </div>
-                    <div className="text-[3vw] mt-[2vh] min-w-1/2">
+                    <div className="text-[3vmin] mt-[2vh] min-w-1/2">
                       <p>
                         <strong>Clients include:</strong>
                       </p>

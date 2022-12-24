@@ -5,6 +5,7 @@ export default function Head() {
       <meta name="description" content="Architecture Portfolio Website" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#FFFFFF" />
+      <meta name="color-scheme" content="light only"/>
       <link rel="icon" href="/images/favicon.ico" />
       <link rel="mask-icon" type="image/png" href="/images/favicon.ico" />
       <link rel="shortcut icon" type="image/png" href="/images/favicon.ico" />

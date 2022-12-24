@@ -28,7 +28,7 @@ const Education = ({
   major: string
 }) => {
   return (
-    <div className="bg-white w-[90vmin] h-[54vmin] mx-auto py-[2vmin]">
+    <div className="bg-[#F0EEE9] w-[90vmin] h-[57vmin] mx-auto py-[2vmin] border-[2vmin] border-x-yellow-800 border-y-orange-900">
       <div className="text-center w-full">
         <h2 className={`${pirata.className} text-[7vmin] leading-tight`}>{university}</h2>
         <div className="flex justify-center items-center text-center">
