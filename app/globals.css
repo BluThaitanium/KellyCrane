@@ -204,16 +204,45 @@ body {
   }
 }
 
+.custom-brushed-metal {
+  position: relative;
+  outline: none;
+  
+  color: hsla(0,0%,20%,1);
+  text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
+  
+  background-color: hsl(0,0%,90%);
+  box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+    inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+    inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+    inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+    
+    hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+    hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+  
+  transition: color .2s;
+  background-image: -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),
+    -webkit-repeating-radial-gradient( 50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.2) 2.2%),
+    
+    -webkit-radial-gradient( 50% 50%, 200% 50%, hsla(0,0%,90%,1) 5%, hsla(0,0%,85%,1) 30%, hsla(0,0%,60%,1) 100%);
+}
 
-.custom-degree-shine {
+
+/* .custom-degree-shine::before {
   position: absolute;
   background: white;
   border-top-right-radius: 100%;
   border-bottom-left-radius: 100%;
   opacity: 70%;
-  top: 40%;
-  height: 10vmin;
-  width: 86vmin;
+  top: calc(6.5vmin + 2rem);
+  height: 57vmin;
+  width: calc((100% - 90vmin) / 2);
   rotate: -45deg;
   left: 0;
   z-index: 1;
@@ -222,10 +251,13 @@ body {
   overflow-x: hidden;
 }
 @keyframes slideIn {
-  0% {
-    transform: translateX(-80vmax) translateY(-80vmax);
+  0%, 100% {
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(80vmax) translateY(80vmax);
+    transform: translateX(calc(100vw - 100%));
   }
-}
+  0%, 100% {
+    left: calc((99% - 90vmin) / 2);
+  }
+} */

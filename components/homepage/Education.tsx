@@ -29,10 +29,10 @@ const Education = ({
 }) => {
   return (
     <div>
-    <div className='relative float-left bg-gradient-to-t from-[#EDDDC2] to-[#FBEBD2] h-[57vmin] w-[calc((100%-90vmin)/2)] m-0 p-0 z-10'></div>
-    <div className='relative float-right bg-gradient-to-t from-[#EDDDC2] to-[#FBEBD2] h-[57vmin] w-[calc((100%-90vmin)/2)] m-0 p-0 z-10'></div>
+    {/* <div className='relative float-left bg-gradient-to-t from-[#E3D3B8] to-[#FBEBD2] h-[57vmin] w-[calc((100%-90vmin)/2)] m-0 p-0 z-10'></div>
+    <div className='relative float-right bg-gradient-to-t from-[#E3D3B8] to-[#FBEBD2] h-[57vmin] w-[calc((100%-90vmin)/2)] m-0 p-0 z-10'></div> */}
+    {/* <div className='custom-degree-shine'></div> */}
     <div className="relative bg-[#F0EEE9] w-[90vmin] h-[57vmin] mx-auto py-[2vmin] border-[2vmin] border-x-yellow-800 border-y-orange-900">
-      <div className='custom-degree-shine'></div>
         <div className="text-center w-full">
           <h2 className={`${pirata.className} text-[7vmin] leading-tight`}>{university}</h2>
           <div className="flex justify-center items-center text-center">
